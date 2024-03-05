@@ -14,6 +14,10 @@ jobs:
             password: ${{ secrets.GITHUB_TOKEN }}
       - name: Check out repository code
         uses: actions/checkout@v4
+      - run: |
+          pwd
+          ls -lah
+        working-directory: ./k8s
       - uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
