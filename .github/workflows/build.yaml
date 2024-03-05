@@ -9,10 +9,8 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
 
-      - name: Install docker
-        run: |
-          brew install docker
-          colima start
+      - name: Set up Docker
+        uses: crazy-max/ghaction-setup-docker@v3
 
       # - name: Set up QEMU
       #   uses: docker/setup-qemu-action@v3
