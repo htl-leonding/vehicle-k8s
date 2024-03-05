@@ -1,5 +1,4 @@
-#FROM eclipse-temurin:21-jre
-FROM arm64v8/eclipse-temurin:21-jre
+FROM eclipse-temurin:21-jre
 
 RUN mkdir -p /opt/application
 COPY *-runner.jar /opt/application/backend.jar
