@@ -9,6 +9,9 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
 
+      - name: Install docker
+        run: brew install docker
+
       # - name: Set up QEMU
       #   uses: docker/setup-qemu-action@v3
       #
@@ -26,10 +29,12 @@ jobs:
           pwd
           ls -lah
         working-directory: ./k8s
+
       - uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '21'
           cache: 'maven'
+
       - name: Build with Maven
         run: ./build.sh
