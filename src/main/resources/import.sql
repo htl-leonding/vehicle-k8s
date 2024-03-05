@@ -1,5 +1,3 @@
-
-
-insert into v_vehicle (v_brand, v_model) VALUES ('VW', 'Käfer 1400');
-insert into v_vehicle (v_brand, v_model) VALUES ('Opel', 'Blitz');
-
+INSERT INTO vehicle (brand, model) VALUES ('Opel', 'Kadett');
+INSERT INTO vehicle (brand, model) VALUES ('VW', 'Käfer 1400');
+INSERT INTO vehicle (brand, model) VALUES ('Opel', 'Blitz');
