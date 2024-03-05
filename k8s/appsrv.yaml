@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: appsrv
-          image: ghcr.io/htl-leonding/backend:latest
-          # remove this when stable. Currently we do not take care of version numbers
+          image: ghcr.io/htl-leonding/vehicle-k8s/backend:latest
+          # remove this when stable. Currently, we do not take care of version numbers
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
